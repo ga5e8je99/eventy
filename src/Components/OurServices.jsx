@@ -16,21 +16,66 @@ export default function OurServices() {
       description:
         "Easily design and customize your event with our intuitive planning tools. Select themes, venues, and services to bring your vision to life.",
       id: 1,
-      icon: <EditCalendarIcon sx={{ fontSize: "3rem" }} color="secondary" />,
+      icon: (
+        <Box
+          sx={{
+            width: 80,
+            height: 80,
+            borderRadius: "50%",
+            background: "linear-gradient(45deg,rgba(14, 55, 124),#A00651)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "0 auto",
+          }}
+        >
+          <EditCalendarIcon sx={{ fontSize: 40, color: "#fff" }} />
+        </Box>
+      ),
     },
     {
       title: "Browse & Join Events",
       description:
         "Discover exciting events in your area or interests. Join with one click and get all the information you need for a seamless experience.",
       id: 2,
-      icon: <HowToReg sx={{ fontSize: "3rem" }} color="secondary" />,
+      icon: (
+        <Box
+          sx={{
+            width: 80,
+            height: 80,
+            borderRadius: "50%",
+            background: "linear-gradient(45deg,rgba(14, 55, 124),#A00651)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "0 auto",
+          }}
+        >
+          <HowToReg sx={{ fontSize: 40, color: "#fff" }} />
+        </Box>
+      ),
     },
     {
       title: "AI Event Assistant",
       description:
         "Our smart chatbot helps you plan, suggests ideas, and answers all your event-related questions 24/7. Get personalized recommendations instantly.",
       id: 3,
-      icon: <SmartToy sx={{ fontSize: "3rem" }} color="secondary" />,
+      icon: (
+        <Box
+          sx={{
+            width: 80,
+            height: 80,
+            borderRadius: "50%",
+            background: "linear-gradient(45deg,rgba(14, 55, 124),#A00651)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "0 auto",
+          }}
+        >
+          <SmartToy sx={{ fontSize: 40, color: "#fff" }} />
+        </Box>
+      ),
     },
   ];
 
@@ -44,14 +89,14 @@ export default function OurServices() {
       }}
     >
       <Container>
-        <Box
-          sx={{
-            textAlign: "center",
-          }}
-        >
+        <Box sx={{ textAlign: "center" }}>
           <Typography
             variant="h2"
-            sx={{ fontSize: "2.5rem", marginBottom: "20px", fontWeight: "600" }}
+            sx={{
+              fontSize: "2.5rem",
+              marginBottom: "20px",
+              fontWeight: "600",
+            }}
           >
             Our Services
           </Typography>
@@ -80,8 +125,8 @@ export default function OurServices() {
                     className="services-card"
                     sx={{
                       padding: "20px",
-                      height: { xs: "auto", sm: "300px" }, // Responsive height
-                      minHeight: "300px", // Minimum height for consistency
+                      height: { xs: "auto", sm: "300px" },
+                      minHeight: "300px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "8px",
                       textAlign: "center",
@@ -89,9 +134,9 @@ export default function OurServices() {
                       overflow: "hidden",
                       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                       background: "rgb(235, 234, 234)",
-                      display: "flex", // Added for better content alignment
-                      flexDirection: "column", // Stack content vertically
-                      justifyContent: "space-between", // Distribute space evenly
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-between",
                       "&:hover": {
                         boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
                       },
@@ -104,7 +149,7 @@ export default function OurServices() {
                         left: 0,
                         width: "100%",
                         height: "0%",
-                        backgroundColor: "rgba(25, 118, 210, 0.1)",
+                        background: "linear-gradient(45deg,rgba(14, 55, 124),#A00651)",
                         zIndex: 0,
                       }}
                       whileHover={{ height: "100%" }}
@@ -114,10 +159,10 @@ export default function OurServices() {
                       sx={{
                         position: "relative",
                         zIndex: 1,
-                        flex: 1, // Takes available space
+                        flex: 1,
                         display: "flex",
                         flexDirection: "column",
-                        justifyContent: "center", // Center content vertically
+                        justifyContent: "center",
                       }}
                     >
                       <Box sx={{ marginBottom: "20px" }}>{service.icon}</Box>
@@ -138,7 +183,6 @@ export default function OurServices() {
                           color: "#666",
                           flex: 1,
                           marginTop: "30px",
-                          // Allows description to take remaining space
                         }}
                       >
                         {service.description}

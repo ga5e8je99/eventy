@@ -223,3 +223,6 @@ swiper-pagination-fraction,
 .css-yk1k97-MuiPaper-root-MuiAlert-root{
   width: 100% !important;
 }
+.services-card::after{
+  background: linear-gradient(45deg,rgba(14, 55, 124),#A00651) !important;
+}

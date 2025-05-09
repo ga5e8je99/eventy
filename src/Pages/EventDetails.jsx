@@ -463,6 +463,7 @@ const EventDetails = () => {
                                   borderRadius: 1,
                                   mt: 2,
                                   overflow: "hidden",
+                                  zIndex:2,
                                 }}
                               >
                                 <MapContainer
@@ -471,7 +472,7 @@ const EventDetails = () => {
                                     eventData.location.longitude,
                                   ]}
                                   zoom={15}
-                                  style={{ height: "100%", width: "100%" }}
+                                  style={{ height: "100%", width: "100%" , zIndex:'2',}}
                                 >
                                   <TileLayer
                                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -1,6 +1,8 @@
 import React from "react";
 import SVG from "./SVG";
 import ImageTwo from "../assets/image2.png";
+import ImageOne from "../assets/about1.jpg";
+import ImageThree from "../assets/about3.jpg";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -51,63 +53,135 @@ export default function AboutSection() {
               <Box
                 sx={{ width: "100%", position: "relative", height: "500px" }}
               >
-                <motion.img
-                  src={ImageTwo}
-                  alt="Team"
-                  style={{
+                {/* Image 1 with overlay */}
+                <Box
+                  sx={{
                     width: "60%",
                     height: "40%",
                     position: "absolute",
                     top: "0%",
                     left: "0%",
                     zIndex: 2,
+                    overflow: "hidden",
+                    borderRadius: "24px",
+                    transform: "rotate(8deg)",
+                    border:'5px solid #ffffff'
                   }}
-                  initial="hidden"
-                  animate={controls}
-                  variants={variants}
-                  transition={{ duration: 0.6 }}
-                  className="image1"
-                />
+                >
+                  <motion.img
+                    src={ImageTwo}
+                    alt="Team"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    initial="hidden"
+                    animate={controls}
+                    variants={variants}
+                    transition={{ duration: 0.6 }}
+                  />
+                  <Box
+                    sx={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      background:
+                        "linear-gradient(45deg,rgba(14, 55, 124,0.4),#A0065140)",
+                      zIndex: 3,
+                    }}
+                  />
+                </Box>
 
-                <motion.img
-                  className="image2"
-                  src={ImageTwo}
-                  alt="Team"
-                  style={{
+                {/* Image 2 with overlay */}
+                <Box
+                  sx={{
                     width: "60%",
                     height: "40%",
                     position: "absolute",
                     top: "50%",
                     left: "50%",
-                    transform: "translate(-50%, -50%)",
+                    transform: "translate(-50%, -50%) rotate(-10deg)",
                     zIndex: 1,
+                    overflow: "hidden",
+                    borderRadius: "24px",
+                    border:'5px solid #ffffff'
+                    
                   }}
-                  initial="hidden"
-                  animate={controls}
-                  variants={variants}
-                  transition={{ delay: 0.2, duration: 0.6 }}
-                />
+                >
+                  <motion.img
+                    src={ImageOne}
+                    alt="Team"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    initial="hidden"
+                    animate={controls}
+                    variants={variants}
+                    transition={{ delay: 0.2, duration: 0.6 }}
+                  />
+                  <Box
+                    sx={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      background:
+                        "linear-gradient(45deg,rgba(14, 55, 124,0.4),#A0065140)",
+                      zIndex: 3,
+                    }}
+                  />
+                </Box>
 
-                <motion.img
-                  className="image3"
-                  src={ImageTwo}
-                  alt="Team"
-                  style={{
+                {/* Image 3 with overlay */}
+                <Box
+                  sx={{
                     width: "60%",
                     height: "40%",
                     position: "absolute",
                     bottom: "0%",
                     right: "0%",
-                    zIndex: 1,
                     transform: "rotate(10deg)",
+                    zIndex: 1,
+                    overflow: "hidden",
+                    borderRadius: "24px",
+                    border:'5px solid #ffffff'
                   }}
-                  initial="hidden"
-                  animate={controls}
-                  variants={variants}
-                  transition={{ delay: 0.4, duration: 0.6 }}
-                />
+                >
+                  <motion.img
+                    src={ImageThree}
+                    alt="Team"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    initial="hidden"
+                    animate={controls}
+                    variants={variants}
+                    transition={{ delay: 0.4, duration: 0.6 }}
+                  />
+                  <Box
+                    sx={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      background:
+                        "linear-gradient(45deg,rgba(14, 55, 124,0.4),#A0065140)",
+                      zIndex: 3,
+                    }}
+                  />
+                </Box>
               </Box>
             </Grid>
+
             <Grid item xs={12} md={6} ref={ref}>
               <motion.div
                 initial="hidden"
