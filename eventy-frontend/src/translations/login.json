@@ -1,0 +1,73 @@
+{
+  "en": {
+    "login": {
+      "titleSlider1": "Welcome Back!",
+      "descriptionSlider1": "Please enter your login details to access your account safely and quickly.",
+      "emailPlaceholder": "Email Address",
+      "passwordPlaceholder": "Password",
+      "forgotPassword": "Forgot Password?",
+      "rememberMe": "Remember Me",
+      "loginButton": "Login",
+      "loginGoogleButton": "Login with Google",
+      "signUpNoAccount": "Don't have an account?",
+      "signUp": "Sign Up",
+      "copyright": "© 2024 Eventy. All rights reserved.",
+      "titleSlider2": "Join Us Today!",
+      "descriptionSlider2": "Experience the best event management platform — where planning becomes easier and your events shine brighter.",
+      "joinSubtitle": "Create your account in seconds and start organizing your events with ease."
+    },
+
+    "signUp": {
+      "titleSlider1": "Create Your Account",
+      "descriptionSlider1": "Join Eventy and start managing your events in the easiest and smartest way.",
+      "fullNamePlaceholder": "Full Name",
+      "emailPlaceholder": "Email Address",
+      "phonePlaceholder":"Phone Number",
+      "passwordPlaceholder": "Password",
+      "confirmPasswordPlaceholder": "Confirm Password",
+      "signUpButton": "Create Account",
+      "signUpGoogleButton": "Sign Up with Google",
+      "alreadyHaveAccount": "Already have an account? ",
+      "login": "Login",
+      "titleSlider2": "Start Your Journey!",
+      "descriptionSlider2": "Build your profile and get ready to organize and explore amazing events.",
+      "joinSubtitle": "Sign up now and enjoy a seamless event management experience."
+    }
+  },
+
+  "ar": {
+    "login": {
+      "titleSlider1": "أهلاً بيك تاني!",
+      "descriptionSlider1": "ياريت تدخل بياناتك عشان توصل لحسابك بسرعة وأمان.",
+      "emailPlaceholder": "عنوان البريد الإلكتروني",
+      "passwordPlaceholder": "كلمة المرور",
+      "forgotPassword": "هل نسيت كلمة المرور؟",
+      "rememberMe": "تذكرني",
+      "loginButton": "تسجيل الدخول",
+      "loginGoogleButton": "تسجيل الدخول بجوجل",
+      "signUpNoAccount": "معندكش حساب؟",
+      "signUp": "سجل الآن",
+      "copyright": "حقوق النشر © 2024 إيفينتي. كل الحقوق محفوظة.",
+      "titleSlider2": "انضم لينا النهارده!",
+      "descriptionSlider2": "جرب أفضل منصة لإدارة الفعاليات - حيث التخطيط بيبقى أسهل وفعالياتك بتلمع أكتر.",
+      "joinSubtitle": "أنشئ حسابك في ثواني وابدأ في تنظيم فعالياتك بسهولة."
+    },
+
+    "signUp": {
+      "titleSlider1": "أنشئ حسابك الآن",
+      "descriptionSlider1": "انضم لإيفينتي وابدأ إدارة فعالياتك بأسرع وأسهل طريقة.",
+      "fullNamePlaceholder": "الاسم الكامل",
+      "emailPlaceholder": "البريد الإلكتروني",
+      "phonePlaceholder":"رقم التليفون",
+      "passwordPlaceholder": "كلمة المرور",
+      "confirmPasswordPlaceholder": "تأكيد كلمة المرور",
+      "signUpButton": "إنشاء حساب",
+      "signUpGoogleButton": "التسجيل باستخدام جوجل",
+      "alreadyHaveAccount":  "عندك حساب؟  ",
+      "login": "تسجيل الدخول ",
+      "titleSlider2": "ابدأ رحلتك!",
+      "descriptionSlider2": "ابني صفحتك وابدأ في تنظيم واستكشاف فعاليات مميزة.",
+      "joinSubtitle": "سجل الآن واستمتع بتجربة إدارة فعاليات سلسة."
+    }
+  }
+}

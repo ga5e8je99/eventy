@@ -1,0 +1,170 @@
+{
+  "en": {
+    "Gamal": "Gamal Ahmed",
+    "GamalJob": "Full Stack Web Developer",
+    "GamalJobDetails": "Specialized in building complete web applications from frontend to backend using modern technologies like React, Node.js, Express, and databases such as MongoDB and MySQL.",
+    "Hazem": "Hazem Ahmed",
+    "HazemJob": "Frontend Web Developer",
+    "HazemJobDetails": "Eventy team leader and Passionate about building high-performance web applications with clean, maintainable code and a strong focus on user experience.",
+
+    "Tasnim": "Tasnim Hussam",
+    "TasnimJob": "UI/UX Designer",
+    "TasnimJobDetails": "Focused on designing intuitive, accessible, and visually appealing user interfaces, with strong attention to usability and detail.",
+
+    "AhmedGamal": "Ahmed Gamal",
+    "AhmedGamalJob": "Backend Developer",
+    "AhmedGamalJobDetails": "Experienced in building robust server-side applications and APIs using Node.js and Express, with a focus on scalability and security.",
+
+    "MohamedHassen": "Mohamed Hassen",
+    "MohamedHassenJob": "Flutter Developer",
+    "MohamedHassenJobDetails": "Skilled in developing cross-platform mobile applications using Flutter, with an emphasis on performance and user experience.",
+
+    "MohamedRajab": "Mohamed Rajab",
+    "MohamedRajabJob": "Flutter Developer",
+    "MohamedRajabJobDetails": "Experienced in building cross-platform mobile applications using Flutter, focusing on delivering seamless user experiences and high performance.",
+
+    "Kareem": "Kareem",
+    "KareemJob": "Flutter Developer",
+    "KareemJobDetails": "Experienced in building cross-platform mobile applications using Flutter, focusing on delivering seamless user experiences and high performance.",
+
+    "alertMessage": "Your message has been sent successfully!",
+    "contactUs": "Contact Us",
+    "contact": "Contact Eventy Team",
+    "description": " We're here to help with your event planning needs",
+    "subDescription": " Reach out to us for inquiries, support, or feedback",
+
+    "ourContact": "Our Contact Details",
+    "eventyHeadquarters": "Eventy Headquarters",
+    "address": "123 Eventy St, Celebration City, EC 45678",
+
+    "supportHotline": "Support Hotline",
+    "phoneNumber": "+20 123 456 7890",
+
+    "email": "Email Us",
+    "emailAddress": "eventyPlanner@gmail.com (Response within 24 hours)",
+    "getInTouch": "Get in Touch",
+    "getInTouchDesc": "Have questions or need assistance? Our team is ready to help you make your event a success. Contact us today!",
+    "fullName": "Full Name",
+    "isRequired": "This field is required",
+    "invalidName": "Please enter a valid name (min 3 characters)",
+    "phoneNumberField": "Phone Number",
+    "invalidPhoneNumber": "Please enter a valid phone number (10-15 digits)",
+    "emailAddressField": "Email Address",
+    "invalidEmail": "Please enter a valid email address",
+    "messageField": "Your Message",
+    "invalidMessage": "Message must be at least 10 characters",
+    "infoConsent": "By submitting this form, you agree to our privacy policy and terms of service. We'll never share your information with third parties.",
+    "sendMessage": "Send Message",
+    "preferContact": " Prefer direct contact? Call us at",
+    "whyChooseEventy": "Why Choose Eventy?",
+    "comprehensiveTitle": "Comprehensive Event Management",
+    "comprehensiveDesc": "From small meetups to large conferences, Eventy provides all the tools you need to plan, promote, and manage your events seamlessly.",
+
+    "attendeeTitle": "Attendee Engagement",
+    "attendeeDesc": " Our platform enhances attendee experience with interactive features, networking opportunities, and seamless registration processes.",
+
+    "reliableSupportTitle": "Reliable Support",
+    "reliableSupportDesc": "Our dedicated support team is available around the clock to ensure your events run smoothly without any technical hiccups.",
+
+    "whatOurClients": "What Our Clients Say",
+    "client1Name": "Ahmed Mohamed",
+    "client1Position": "Tech Summit Organizer",
+    "client1Feedback": "'Eventy transformed how we organize our annual tech conference. The platform is intuitive and saved us countless hours of administrative work.'",
+
+    "client2Name": "Sara Ali",
+    "client2Position": "Wedding Planner",
+    "client2Feedback": "'Using Eventy for my clients' weddings has been a game-changer. The tools for managing RSVPs and seating arrangements made the process so much smoother.'",
+    "meetOurTeam": "Meet Our Team",
+    "alertMessageError": "There was an error sending your message. Please try again later."
+  },
+  "ar": {
+    "Gamal": "جمال أحمد",
+    "GamalJob": "مطوّر ويب متكامل",
+    "GamalJobDetails": "متخصص في تطوير وبناء تطبيقات ويب كاملة من أول الواجهة الأمامية لحد الباكيند، باستخدام تقنيات حديثة زي React و Node.js و Express، وكمان قواعد بيانات زي MongoDB و MySQL.",
+    "contactUs": "اتصل بنا",
+
+    "Hazem": "حازم أحمد",
+    "HazemJob": "Frontend مطوّر واجهات",
+    "HazemJobDetails": "مهتم ببناء تطبيقات ويب سريعة بكود نظيف ومرتب، مع اهتمام كبير بتجربة المستخدم. قائد فريق Eventy.",
+
+    "Tasnim": "تسنيم حسام",
+    "TasnimJob": "مصممة UI/UX",
+    "TasnimJobDetails": "تركز إنها تقدم تصميمات بسيطة وسهلة وجذابة، مع اهتمام بكل التفاصيل علشان تضمن أفضل تجربة للمستخدم.",
+
+    "AhmedGamal": "أحمد جمال",
+    "AhmedGamalJob": "Backend مطوّر خلفية",
+    "AhmedGamalJobDetails": "خبرة في بناء السيرفرات والـ APIs باستخدام Node.js وExpress، مع تركيز على الأمان وقابلية التوسع.",
+
+    "MohamedHassen": "محمد حسن",
+    "MohamedHassenJob": "مطور Flutter",
+    "MohamedHassenJobDetails": "شاطر في تطوير تطبيقات موبايل متعددة المنصات باستخدام Flutter، مع اهتمام بالأداء وتجربة المستخدم.",
+
+    "MohamedRajab": "محمد رجب",
+    "MohamedRajabJob": "مطور Flutter",
+    "MohamedRajabJobDetails": "خبرة في بناء تطبيقات موبايل متكاملة باستخدام Flutter، بأداء عالي وتجربة استخدام مريحة.",
+
+    "Kareem": "كريم",
+    "KareemJob": "مطور Flutter",
+    "KareemJobDetails": "شغال على تطبيقات موبايل متعددة المنصات باستخدام Flutter، وبيركز على إن التجربة تكون سلسة وسريعة.",
+
+    "alertMessage": "رسالتك اتبعتت بنجاح!",
+
+    "contact": "تواصل مع فريق Eventy",
+    "description": "إحنا موجودين علشان نساعدك في كل اللي يخص تنظيم فعالياتك.",
+    "subDescription": "لو عندك استفسار، مشكلة، أو حتى اقتراح... اتواصل معانا.",
+
+    "ourContact": "بيانات التواصل",
+    "eventyHeadquarters": "مقر Eventy",
+    "address": "١٢٣ شارع إيفنتي، مدينة الاحتفالات، EC 45678",
+
+    "supportHotline": "خط الدعم",
+    "phoneNumber": "+20 123 456 7890",
+
+    "email": "راسلنا",
+    "emailAddress": "eventyPlanner@gmail.com (هنرد عليك خلال ٢٤ ساعة)",
+
+    "getInTouch": "ابعتلنا رسالة",
+    "getInTouchDesc": "لو محتاج مساعدة أو عندك أي سؤال، فريق Eventy جاهز يساعدك في أي وقت. ابعتلنا دلوقتي!",
+
+    "fullName": "الاسم كامل",
+    "isRequired": "الحقل ده مطلوب",
+    "invalidName": "من فضلك اكتب اسم صحيح (٣ حروف على الأقل)",
+
+    "phoneNumberField": "رقم الموبايل",
+    "invalidPhoneNumber": "من فضلك اكتب رقم موبايل صحيح (من 10 لـ 15 رقم)",
+
+    "emailAddressField": "البريد الإلكتروني",
+    "invalidEmail": "من فضلك اكتب بريد إلكتروني صحيح",
+
+    "messageField": "رسالتك",
+    "invalidMessage": "الرسالة لازم تكون 10 حروف على الأقل",
+
+    "infoConsent": "بمجرد ما تبعت النموذج، يبقى إنت موافق على سياسة الخصوصية وشروط الخدمة بتاعتنا. وإحنا عمرنا ما هنشارك بياناتك مع أي حد.",
+
+    "sendMessage": "إرسال",
+    "preferContact": "تحب تكلمنا مباشرة؟ اتصل بينا على",
+
+    "whyChooseEventy": "ليه تختار Eventy؟",
+
+    "comprehensiveTitle": "إدارة فعاليات بشكل كامل",
+    "comprehensiveDesc": "من أول تنظيم الاجتماعات الصغيرة لحد المؤتمرات الكبيرة، Eventy بيقدّم لك كل الأدوات اللي هتحتاجها علشان تدير فعاليتك بسهولة.",
+
+    "attendeeTitle": "تجربة حضور مميزة",
+    "attendeeDesc": "المنصة بتوفر مميزات تفاعلية ونظام تسجيل سهل علشان تضمن أفضل تجربة للحضور.",
+
+    "reliableSupportTitle": "دعم موثوق",
+    "reliableSupportDesc": "فريق الدعم بتاعنا موجود 24 ساعة علشان يحل أي مشكلة ويضمن إن فعاليتك تمشي من غير أي مشاكل.",
+
+    "whatOurClients": "آراء عملائنا",
+
+    "client1Name": "أحمد محمد",
+    "client1Position": "منظم قمة تقنية",
+    "client1Feedback": "'Eventy غير طريقة شغلنا في المؤتمر السنوي. المنصة سهلة ووفرّت علينا وقت ومجهود كبير.'",
+
+    "client2Name": "سارة علي",
+    "client2Position": "منظمة أفراح",
+    "client2Feedback": "'Eventy ساعدني جدًا في تنظيم أفراح العملاء. إدارة الدعوات والـ RSVP بقت أسهل بكتير.'",
+
+    "meetOurTeam": "قابل فريقنا"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "en": {
+    "home": "Home",
+    "create": "Create",
+    "schedule": "Schedule",
+    "search": "Search",
+    "contactUs": "Contact Us",
+    "addAccount": "Add account",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "ar": {
+    "home": "الرئيسية",
+    "create": "إنشاء",
+    "schedule": "الجدول",
+    "search": "بحث",
+    "contactUs": "اتصل بنا",
+    "addAccount": "ضيف حساب",
+    "profile": "الحساب",
+    "settings": "الاعدادات",
+    "logout" : "تسجيل خروج"
+  }
+}

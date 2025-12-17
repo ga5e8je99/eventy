@@ -1,0 +1,23 @@
+{
+  "en": {
+    "createTitle": "Create Experiences People Will Love",
+    "createDescription": "It’s more than just an event — it’s a moment to remember. Craft every detail with confidence, reach the right audience, and let the excitement begin. Your event deserves to be extraordinary!",
+
+    "startNow": "Start Now",
+
+    "loginRequiredTitle": "You need to login to continue",
+    "loginRequiredDesc": "Please log in to access this page and continue using the platform.",
+    "login": "Login"
+  },
+
+  "ar": {
+    "createTitle": "اصنع تجارب الناس هتحبها",
+    "createDescription": "الفعالية مش مجرد حدث… دي لحظة بتعيش. خطّط كل التفاصيل بثقة، ووصل للجمهور الصح، وخلي الحماس يبدأ. فعاليتك تستحق تكون مميزة واستثنائية!",
+
+    "startNow": "ابدأ الآن",
+
+    "loginRequiredTitle": "محتاج تسجّل دخول عشان تكمّل",
+    "loginRequiredDesc": "من فضلك سجّل دخول علشان تقدر توصل للصفحة دي وتستخدم المنصة.",
+    "login": "تسجيل الدخول"
+  }
+}

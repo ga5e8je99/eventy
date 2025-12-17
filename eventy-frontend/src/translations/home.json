@@ -1,0 +1,62 @@
+{
+  "en": {
+    "home": {
+      "titleSlider1": "Professional Conferences Made Simple",
+      "descriptionSlider1": "Plan and organize your conferences with ease and efficiency.",
+      "titleSlider2": "Create Unforgettable Family Moments",
+      "descriptionSlider2": "From birthdays to reunions, make every gathering special.",
+      "titleSlider3": "Celebrate Your Parties in Style",
+      "descriptionSlider3": "Whether it's a wedding or a night out, we’ve got you covered.",
+      "learnMore": "Learn More",
+      "categoryTitle": "Categories",
+      "categoryDescription": "Discover a variety of event categories to suit every interest and occasion.",
+      "forYouTitle": "Events For You",
+      "forYouDescription": "Explore personalized event recommendations tailored just for you.",
+      "topEventsTitle": "Top Events",
+      "topEventsDescription": "Check out the most popular events happening around you.",
+      "downloadAppTitle": "Download Our App",
+      "downloadAppDescription": "Discover events near you anytime, anywhere! Book tickets, explore categories and enjoy your time.",
+      "googlePlay": "Google Play",
+      "appStore": "App Store",
+      "scanQRCode": "Scan QR Code to download",
+      "conference": "Conference",
+      "workshop": "Workshop",
+      "concert": "Concert",
+      "sports": "Sports",
+      "enterainment": "Entertainment",
+      "Religious": "Religious",
+      "business": "Business",
+      "education": "Education"
+    }
+  },
+  "ar": {
+    "home": {
+      "titleSlider1": "مؤتمراتك بقت أسهل وأسرع",
+      "descriptionSlider1": "خلّي مؤتمراتك منظمة وناجحة من غير وجع دماغ.",
+      "titleSlider2": "لمّة العيلة على مزاجك",
+      "descriptionSlider2": "من أعياد الميلاد للعزومات.. كل لمّة هتبقى مختلفة ومبهجة.",
+      "titleSlider3": "حفلة على كيفك",
+      "descriptionSlider3": "سواء فرح أو سهرة مع صحابك.. هنخليها أجواء ما تتنسيش.",
+      "learnMore": "اعرف أكتر",
+      "categoryTitle": "التصنيفات",
+      "categoryDescription": "اكتشف تشكيلة متنوعة من تصنيفات الفعاليات اللي تناسب كل الاهتمامات والمناسبات.",
+      "forYouTitle": "فعاليات ليك",
+      "forYouDescription": "استكشف الفعاليات اللي متظبطة على ذوقك.",
+      "topEventsTitle": "أفضل الفعاليات",
+      "topEventsDescription": "اطّلع على أكتر الفعاليات شعبية حواليك.",
+      "downloadAppTitle": "حمّل تطبيقنا",
+      "downloadAppDescription": "اعرف الفعاليات القريبة منك في أي وقت! احجز التذاكر، تصفّح التصنيفات واستمتع بوقتك.",
+      "googlePlay": "جوجل بلاي",
+      "appStore": "آب ستور",
+      "scanQRCode": "امسح الكود لتحمّل التطبيق",
+      "conference": "مؤتمر",
+      "workshop": "ورشة عمل",
+      "concert": "حفلة موسيقية",
+      "sports": "رياضة",
+      "enterainment": "ترفيه",
+      "Religious": "ديني",
+      "business": "أعمال",
+      "education": "تعليم"
+    }
+  }
+}

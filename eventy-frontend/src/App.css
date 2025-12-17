@@ -1,0 +1,132 @@
+body {
+  margin: 0 !important;
+  overflow-x: hidden;
+}
+/* Arabic */
+@font-face {
+  font-family: IBM;
+  src: url(../public/arabicFont/IBMPlexSansArabic-Medium.ttf);
+  font-size: medium;
+}
+@font-face {
+  font-family: IBM;
+  src: url(../public/arabicFont/IBMPlexSansArabic-Bold.ttf);
+  font-size: bold;
+}
+@font-face {
+  font-family: IBM;
+  src: url(../public/arabicFont/IBMPlexSansArabic-Light.ttf);
+  font-size: light;
+}
+@font-face {
+  font-family: IBM;
+  src: url(../public/arabicFont/IBMPlexSansArabic-Light.ttf);
+  font-size: small;
+}
+/* English */
+@font-face {
+  font-family: Inter;
+  src: url(../public/englishFont/Inter_28pt-Light.ttf);
+  font-size: small;
+}
+@font-face {
+  font-family: Inter;
+  src: url(../public/englishFont/Inter_18pt-Medium.ttf);
+  font-size: medium;
+}
+@font-face {
+  font-family: Inter;
+  src: url(../public/englishFont/Inter_24pt-ExtraBold.ttf);
+  font-weight: bold;
+}
+/* @property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.container::after, .container::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #4d87ecff, #0E377C ,#092452ff, #fff,#e8589dff,#A00651,#5a082fff, #4d87ecff);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  position: absolute;
+  z-index: -1;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+  animation: spin 3s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+}
+.container::after {
+  filter: blur(2rem);
+  opacity:0.5;
+  -webkit-filter: blur(2rem);
+}
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+} */
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+.clock-loader {
+  --clock-color: #1976d2; /* أو خليها من MUI theme */
+  --clock-width: 4rem;
+  --clock-radius: calc(var(--clock-width) / 2);
+  --clock-minute-length: calc(var(--clock-width) * 0.4);
+  --clock-hour-length: calc(var(--clock-width) * 0.2);
+  --clock-thickness: 0.2rem;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--clock-width);
+  height: var(--clock-width);
+
+  border-radius: 50%;
+}
+
+.clock-loader::before,
+.clock-loader::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--clock-radius) * 0.25);
+  width: var(--clock-thickness);
+
+  border-radius: 10px;
+  transform-origin: center calc(100% - calc(var(--clock-thickness) / 2));
+  animation: spin infinite linear;
+}
+
+/* Minute hand */
+.clock-loader::before {
+  height: var(--clock-minute-length);
+  animation-duration: 2s;
+}
+
+/* Hour hand */
+.clock-loader::after {
+  top: calc(var(--clock-radius) * 0.25 + var(--clock-hour-length));
+  height: var(--clock-hour-length);
+  animation-duration: 15s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}

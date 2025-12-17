@@ -1,0 +1,36 @@
+{
+  "en": {
+    "footer": {
+      "eventsAway": "Your Events Are Just a Step Away",
+      "requestInfo": "Request More Information",
+      "description": "We are here to help you create, manage, and enjoy unforgettable events with ease and professionalism.",
+      "contactBtn": "Contact Us",
+      "tagline": "Making every event special and memorable.",
+      "quickLinks": "Quick Links",
+      "home": "Home",
+      "create": "Create",
+      "schedule": "Schedule",
+      "search": "Search",
+      "contactUs": "Contact Us",
+      "contactInfo": "Contact Information",
+      "allRightsReserved": "All rights reserved."
+    }
+  },
+  "ar": {
+    "footer": {
+      "eventsAway": "حفلتك على بُعد خطوة واحدة",
+      "requestInfo": "اطلب تفاصيل أكتر",
+      "description": "إحنا موجودين علشان نساعدك تنظم وتستمتع بفعاليات مميزة من غير تعب وبكل احترافية.",
+      "contactBtn": "كلمنا",
+      "tagline": "بنخلي كل مناسبة ليها طعم خاص.",
+      "quickLinks": "روابط سريعة",
+      "home": "الرئيسية",
+      "create": "اعمل فعالية",
+      "schedule": "الجدول بتاعك",
+      "search": "دور",
+      "contactUs": "كلمنا",
+      "contactInfo": "معلومات التواصل",
+      "allRightsReserved": "كل الحقوق محفوظة."
+    }
+  }
+}

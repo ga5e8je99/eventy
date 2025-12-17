@@ -1,0 +1,20 @@
+{
+  "en": {
+    "verifyEmailTitle": "Verify Your Email Address",
+    "verifyEmailDesc": "A verification link has been sent to your email address. Please check your inbox and click on the link to verify your account.",
+    "enterCodeDesc": "Enter the 6-digit code below to activate your account",
+    "verifyButton": "Verify",
+    "didntReceiveCode": "Didn’t receive the code?",
+    "resendLink": "Resend",
+    "checkSpam": "If you don't see the email, please check your spam or junk folder."
+  },
+  "ar": {
+    "verifyEmailTitle": "تأكد من بريدك الإلكتروني",
+    "verifyEmailDesc": "بعتنالِك رابط التحقق على بريدك. افتح بريدك واضغط على الرابط عشان تفعل حسابك.",
+    "enterCodeDesc": "ادخل الكود المكون من 6 أرقام لتفعيل حسابك",
+    "verifyButton": "تحقق",
+    "didntReceiveCode": "ما وصلنيش الكود؟",
+    "resendLink": "ابعت الكود تاني",
+    "checkSpam": "لو ملقتش الإيميل، بص في مجلد السبام أو المهملات."
+  }
+}

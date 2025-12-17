@@ -1,0 +1,50 @@
+{
+  "en": {
+    "description": "Discover amazing events happening near you",
+    "subDescription": "Find, join, and create events that match your interests",
+    "started": "Get Started",
+
+    "featuresTitle": "Why Choose Eventy?",
+    "featuresSubtitle": "Everything you need to explore and manage events in one place",
+    "feature1Title": "Find Local Events",
+    "feature1Desc": "Discover events happening in your area based on your interests",
+    "feature2Title": "Create Events",
+    "feature2Desc": "Easily organize and promote your own events to the community",
+    "feature3Title": "Smart Scheduling",
+    "feature3Desc": "Never miss an event with personalized reminders and calendar sync",
+    "feature4Title": "Connect with Others",
+    "feature4Desc": "Meet people who share your interests and build your community",
+    "ctaTitle": "Ready to Explore Events?",
+    "ctaDescription": "Join thousands of users discovering amazing events every day",
+    "startNow": "Start Exploring",
+
+    "aboutTitle": "About Us",
+    "aboutSubtitle": "Creating unforgettable moments.",
+    "aboutDesc1": "Eventy is a team of passionate event planners, designers, and coordinators dedicated to turning your vision into reality. Whether it's a corporate event, wedding, or private party, we work closely with you to ensure every detail is perfect. Together, we create experiences that leave lasting impressions.",
+    "aboutDesc2": "With a culture of creativity and collaboration, the Eventy team is committed to delivering exceptional events. From concept to execution, we bring your ideas to life with professionalism, enthusiasm, and a touch of magic. Let us make your next event truly unforgettable."
+  },
+  "ar": {
+    "description": "اكتشف  أروع الأيفنتات اللي قريبة منك",
+    "subDescription": "دور، شارك، واعمل أيفنتات تناسب اهتماماتك",
+    "started": " يلا نبدأ ",
+
+    "featuresTitle": "ليه تختار Eventy؟",
+    "featuresSubtitle": "كل اللي محتاجه علشان تكتشف وتدير الأيفنتات في مكان واحد",
+    "feature1Title": "دور على الأيفنتات القريبة",
+    "feature1Desc": "هتلاقي أيفنتات بتحصل حواليك على حسب اهتماماتك",
+    "feature2Title": "اعمل أيفنتك",
+    "feature2Desc": "نظم وروّج للأيفنتات بتاعتك بسهولة وسط المجتمع",
+    "feature3Title": "جدولة ذكية",
+    "feature3Desc": "خلي بالك متفوتش أي أيفنت مع التذكيرات والمزامنة مع الكاليندر",
+    "feature4Title": "اتعرف على ناس",
+    "feature4Desc": "قابل ناس عندهم نفس اهتماماتك وابنوا مجتمع مع بعض",
+    "ctaTitle": "جاهز تكتشف الأيفنتات؟",
+    "ctaDescription": "انضم لآلاف المستخدمين اللي بيكتشفوا أيفنتات جديدة كل يوم",
+    "startNow": "ابدأ الاكتشاف",
+
+    "aboutTitle": "معلومات عنا",
+    "aboutSubtitle": "بنصنع لحظات لا تُنسى.",
+    "aboutDesc1": "إيفنتي هو فريق من منظمي الأحداث والمصممين والمنسقين الشغوفين، مكرسين لتحويل رؤيتك إلى واقع. سواء كان حدثًا للشركات أو حفل زفاف أو حفلة خاصة، نعمل معك عن قرب لضمان أن كل التفاصيل مثالية. معًا، نصنع تجارب تترك انطباعًا دائمًا.",
+    "aboutDesc2": "بثقافة قائمة على الإبداع والتعاون، يلتزم فريق إيفنتي بتقديم أحداث استثنائية. من الفكرة إلى التنفيذ، نجلب أفكارك إلى الحياة باحترافية وحماس ولمسة من السحر. دعنا نجعل حدثك القادم لا يُنسى حقًا."
+  }
+}
