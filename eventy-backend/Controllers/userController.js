@@ -57,7 +57,7 @@ exports.signup = async (req, res) => {
     }
 
     // ===== Create User =====
-    const user = new User({ name, email, phone, password,role });
+    const user = new User({ name, email, phone, password });
     user.generateVerificationCode(); // Generate verification code
 
     await user.save();

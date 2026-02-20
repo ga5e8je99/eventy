@@ -86,7 +86,7 @@ export default function Search() {
 
   const MobileEventCard = ({ event, index }) => (
     <Paper
-      key={index}
+      key={`mobile-card-${event._id || index}`}
       sx={{
         width: "100%",
         display: "flex",

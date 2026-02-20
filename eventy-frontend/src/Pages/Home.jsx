@@ -542,7 +542,7 @@ export default function Home() {
           >
             {categoryTypes.map((type, index) => (
               <Button
-                key={index}
+                key={`category-${type.name || index}`}
                 variant="outlined"
                 sx={{
                   textTransform: "none",
@@ -617,7 +617,7 @@ export default function Home() {
             >
               {eventCategories.map((category, index) => (
                 <SwiperSlide
-                  key={index}
+                  key={`event-category-${category.title || index}`}
                   style={{
                     height: "auto",
                     display: "flex",
@@ -891,7 +891,7 @@ export default function Home() {
             >
               {eventCategories.map((category, index) => (
                 <SwiperSlide
-                  key={index}
+                  key={`top-category-${category.title || index}`}
                   style={{
                     height: "auto",
                     display: "flex",

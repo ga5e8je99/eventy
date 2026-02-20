@@ -226,7 +226,7 @@ export default function Onboarding() {
           >
             {[Image1, Image2, Image3].map((img, i) => (
               <Box
-                key={i}
+                key={`carousel-image-${i}`}
                 className="fade-in"
                 sx={{
                   background: `linear-gradient(${
@@ -349,7 +349,7 @@ export default function Onboarding() {
           >
             {features.map((feature, index) => (
               <Box
-                key={index}
+                key={`feature-${index}`}
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
                 sx={{

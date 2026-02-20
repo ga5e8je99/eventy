@@ -36,7 +36,7 @@ export default function CreateSteps() {
   const [open, setOpen] = useState(false);
   const locationContext = useContext(LocationContext) || {};
   const location = locationContext.location ;
-  const [dateForm, setDataForm] = useState({
+  const [dataForm, setDataForm] = useState({
     name: "",
     description: "",
     category: "",
@@ -120,7 +120,7 @@ export default function CreateSteps() {
   };
   const handleAddTicketTier = () => {
     const newTier = {
-      tierName: `Tier ${dateForm.ticketTiers.length + 1}`,
+      tierName: `Tier ${dataForm.ticketTiers.length + 1}`,
       price: 0,
     };
     setDataForm((prev) => ({
@@ -130,7 +130,7 @@ export default function CreateSteps() {
   };
 
   const handleRemoveTicketTier = (index) => {
-    if (dateForm.ticketTiers.length > 1) {
+    if (dataForm.ticketTiers.length > 1) {
       setDataForm((prev) => ({
         ...prev,
         ticketTiers: prev.ticketTiers.filter((_, i) => i !== index),
@@ -139,7 +139,7 @@ export default function CreateSteps() {
   };
 
   const handleTicketTierChange = (index, field, value) => {
-    const updatedTiers = [...dateForm.ticketTiers];
+    const updatedTiers = [...dataForm.ticketTiers];
     updatedTiers[index][field] = value;
     setDataForm((prev) => ({
       ...prev,
@@ -165,7 +165,7 @@ export default function CreateSteps() {
       const url = `${apiBase}/eventy/events`;
       const token = localStorage.getItem("token") || "";
 
-      const res = await axios.post(url, dateForm, {
+      const res = await axios.post(url, dataForm, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
@@ -202,7 +202,7 @@ export default function CreateSteps() {
             </Typography>
             <TextField
               label="Event Name"
-              value={dateForm.name}
+              value={dataForm.name}
               onChange={(e) => handleInputChange("name", e.target.value)}
               variant="outlined"
               fullWidth
@@ -211,7 +211,7 @@ export default function CreateSteps() {
             />
             <TextField
               label="Description"
-              value={dateForm.description}
+              value={dataForm.description}
               onChange={(e) => handleInputChange("description", e.target.value)}
               variant="outlined"
               fullWidth
@@ -223,7 +223,7 @@ export default function CreateSteps() {
             <TextField
               select
               label="Category"
-              value={dateForm.category}
+              value={dataForm.category}
               onChange={(e) => handleInputChange("category", e.target.value)}
               variant="outlined"
               fullWidth
@@ -237,10 +237,10 @@ export default function CreateSteps() {
               <MenuItem value="Business">Business</MenuItem>
               <MenuItem value="Other">Other</MenuItem>
             </TextField>
-            {dateForm.category === "Other" && (
+            {dataForm.category === "Other" && (
               <TextField
                 label="Custom Category"
-                value={dateForm.customCategory}
+                value={dataForm.customCategory}
                 onChange={(e) =>
                   handleInputChange("customCategory", e.target.value)
                 }
@@ -253,7 +253,7 @@ export default function CreateSteps() {
             <TextField
               select
               label="Event Type"
-              value={dateForm.type}
+              value={dataForm.type}
               onChange={(e) => handleInputChange("type", e.target.value)}
               variant="outlined"
               fullWidth
@@ -283,12 +283,12 @@ export default function CreateSteps() {
                   </Typography>
                 </Typography>
                 
-                {dateForm.coverImage ? (
+                {dataForm.coverImage ? (
                   <Card sx={{ maxWidth: 400, mb: 2 }}>
                     <CardMedia
                       component="img"
                       height="200"
-                      image={dateForm.coverImage}
+                      image={dataForm.coverImage}
                       alt="Cover preview"
                       sx={{ objectFit: "cover" }}
                     />
@@ -296,7 +296,7 @@ export default function CreateSteps() {
                       <Button
                         size="small"
                         startIcon={<ImageIcon />}
-                        onClick={() => window.open(dateForm.coverImage, "_blank")}
+                        onClick={() => window.open(dataForm.coverImage, "_blank")}
                       >
                         View Full Size
                       </Button>
@@ -370,16 +370,16 @@ export default function CreateSteps() {
                     onChange={(e) => {
                       const files = Array.from(e.target.files);
                       const newImageUrls = files.map(file => URL.createObjectURL(file));
-                      handleInputChange("images", [...dateForm.images, ...newImageUrls]);
+                      handleInputChange("images", [...dataForm.images, ...newImageUrls]);
                     }}
                   />
                 </Box>
         
                 {/* Image Gallery Grid */}
-                {dateForm.images.length > 0 ? (
+                {dataForm.images.length > 0 ? (
                   <Grid container spacing={2}>
-                    {dateForm.images.map((imageUrl, index) => (
-                      <Grid item xs={12} sm={6} md={4} key={index}>
+                    {dataForm.images.map((imageUrl, index) => (
+                      <Grid item xs={12} sm={6} md={4} key={`image-grid-${index}`}>
                         <Card sx={{ height: "100%" }}>
                           <Box sx={{ position: "relative", paddingTop: "75%" }}>
                             <CardMedia
@@ -401,7 +401,7 @@ export default function CreateSteps() {
                               size="small"
                               startIcon={<DeleteIcon />}
                               onClick={() => {
-                                const updatedImages = [...dateForm.images];
+                                const updatedImages = [...dataForm.images];
                                 updatedImages.splice(index, 1);
                                 handleInputChange("images", updatedImages);
                               }}
@@ -436,7 +436,7 @@ export default function CreateSteps() {
         
         <TextField
               label="Host Company"
-              value={dateForm.hostCompany}
+              value={dataForm.hostCompany}
               onChange={(e) => handleInputChange("hostCompany", e.target.value)}
               variant="outlined"
               fullWidth
@@ -446,7 +446,7 @@ export default function CreateSteps() {
             <FormControlLabel
               control={
                 <Switch
-                  checked={dateForm.isPublic}
+                  checked={dataForm.isPublic}
                   onChange={(e) =>
                     handleInputChange("isPublic", e.target.checked)
                   }
@@ -476,7 +476,7 @@ export default function CreateSteps() {
                 <TextField
                   select
                   label="Recurrence"
-                  value={dateForm.isRecurring}
+                  value={dataForm.isRecurring}
                   onChange={(e) =>
                     handleInputChange("isRecurring", e.target.value)
                   }
@@ -494,7 +494,7 @@ export default function CreateSteps() {
                 <TextField
                   label="Start Date"
                   type="date"
-                  value={dateForm.startDate}
+                  value={dataForm.startDate}
                   onChange={(e) =>
                     handleInputChange("startDate", e.target.value)
                   }
@@ -509,7 +509,7 @@ export default function CreateSteps() {
                 <TextField
                   label="End Date"
                   type="date"
-                  value={dateForm.endDate}
+                  value={dataForm.endDate}
                   onChange={(e) => handleInputChange("endDate", e.target.value)}
                   variant="outlined"
                   fullWidth
@@ -522,7 +522,7 @@ export default function CreateSteps() {
                 <TextField
                   label="Start Time"
                   type="time"
-                  value={dateForm.startTime}
+                  value={dataForm.startTime}
                   onChange={(e) =>
                     handleInputChange("startTime", e.target.value)
                   }
@@ -537,7 +537,7 @@ export default function CreateSteps() {
                 <TextField
                   label="End Time"
                   type="time"
-                  value={dateForm.endTime}
+                  value={dataForm.endTime}
                   onChange={(e) => handleInputChange("endTime", e.target.value)}
                   variant="outlined"
                   fullWidth
@@ -559,7 +559,7 @@ export default function CreateSteps() {
             <TextField
               label="Capacity"
               type="number"
-              value={dateForm.capacity}
+              value={dataForm.capacity}
               onChange={(e) =>
                 handleInputChange("capacity", parseInt(e.target.value) || 0)
               }
@@ -575,9 +575,9 @@ export default function CreateSteps() {
               <Typography variant="subtitle1" gutterBottom>
                 Ticket Tiers
               </Typography>
-              {dateForm.ticketTiers.map((tier, index) => (
+              {dataForm.ticketTiers.map((tier, index) => (
                 <Box
-                  key={index}
+                  key={`tier-${tier.tierName || index}`}
                   sx={{
                     display: "flex",
                     gap: 2,
@@ -617,7 +617,7 @@ export default function CreateSteps() {
                       inputProps: { min: 0, step: 0.01 },
                     }}
                   />
-                  {dateForm.ticketTiers.length > 1 && (
+                  {dataForm.ticketTiers.length > 1 && (
                     <IconButton
                       onClick={() => handleRemoveTicketTier(index)}
                       color="error"
@@ -651,27 +651,27 @@ export default function CreateSteps() {
                   <Typography variant="subtitle2" color="text.secondary">
                     Event Name
                   </Typography>
-                  <Typography variant="body1">{dateForm.name}</Typography>
+                  <Typography variant="body1">{dataForm.name}</Typography>
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography variant="subtitle2" color="text.secondary">
                     Category
                   </Typography>
-                  <Typography variant="body1">{dateForm.category}</Typography>
+                  <Typography variant="body1">{dataForm.category}</Typography>
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography variant="subtitle2" color="text.secondary">
                     Type
                   </Typography>
-                  <Typography variant="body1">{dateForm.type}</Typography>
+                  <Typography variant="body1">{dataForm.type}</Typography>
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="subtitle2" color="text.secondary">
                     Date & Time
                   </Typography>
                   <Typography variant="body1">
-                    {dateForm.startDate} {dateForm.startTime} -{" "}
-                    {dateForm.endDate} {dateForm.endTime}
+                    {dataForm.startDate} {dataForm.startTime} -{" "}
+                    {dataForm.endDate} {dataForm.endTime}
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
@@ -679,29 +679,29 @@ export default function CreateSteps() {
                     Location
                   </Typography>
                   <Typography variant="body1">
-                    {dateForm.location.address}, {dateForm.city}
+                    {dataForm.location.address}, {dataForm.city}
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography variant="subtitle2" color="text.secondary">
                     Capacity
                   </Typography>
-                  <Typography variant="body1">{dateForm.capacity}</Typography>
+                  <Typography variant="body1">{dataForm.capacity}</Typography>
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography variant="subtitle2" color="text.secondary">
                     Visibility
                   </Typography>
                   <Typography variant="body1">
-                    {dateForm.isPublic ? "Public" : "Private"}
+                    {dataForm.isPublic ? "Public" : "Private"}
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="subtitle2" color="text.secondary">
                     Ticket Tiers
                   </Typography>
-                  {dateForm.ticketTiers.map((tier, index) => (
-                    <Typography key={index} variant="body1">
+                  {dataForm.ticketTiers.map((tier, index) => (
+                    <Typography key={`review-tier-${tier.tierName || index}`} variant="body1">
                       {tier.tierName}: ${tier.price}
                     </Typography>
                   ))}
@@ -784,3 +784,4 @@ export default function CreateSteps() {
     </Container>
   );
 }
+

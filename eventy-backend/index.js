@@ -11,7 +11,7 @@ app.use(express.json());
 // Connect MongoDB
 mongoose
   .connect(
-    "mongodb+srv://ga138989_db_user:LISJFQswoPQqSCxu@api.ymy2c4q.mongodb.net/?appName=api"
+    "mongodb+srv://ga138989_db_user:56aFFzaV2gn7ZWkq@cluster0.gkbq9vu.mongodb.net/?appName=Cluster0"
   )
   .then(() => console.log("✅ Connected to MongoDB"))
   .catch(console.error);
@@ -34,7 +34,7 @@ app.use("/eventy/events", eventRoutes);
 app.use("/eventy/users", userRoutes);
 app.use("/eventy/contact", contactRoutes);
 
-// ❗ ممنوع app.listen على Vercel
-// app.listen(3000, () => console.log("🚀 Server running"));
+
+app.listen(3000, () => console.log("🚀 Server running"));
 
 module.exports = app; // لازم جداً

@@ -733,7 +733,7 @@ export default function Event() {
                         icon: <AttachMoneyIcon />,
                       },
                     ].map((stat, index) => (
-                      <Grid item xs={6} sm={3} key={index}>
+                      <Grid item xs={6} sm={3} key={`stat-${stat.label || index}`}>
                         <Card
                           elevation={0}
                           sx={{
@@ -1802,7 +1802,7 @@ export default function Event() {
                 {e.images && e.images.length > 0 ? (
                   <Grid container spacing={isMobile ? 1 : 2}>
                     {e.images.map((image, index) => (
-                      <Grid item xs={6} sm={4} md={3} key={index}>
+                      <Grid item xs={6} sm={4} md={3} key={`image-${image || index}`}>
                         <Card
                           elevation={0}
                           sx={{

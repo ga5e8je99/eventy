@@ -135,7 +135,7 @@ export default function VerifyEmail() {
         <Stack direction="row" spacing={2} justifyContent="center" mb={2}>
           {otp.map((digit, index) => (
             <TextField
-              key={index}
+              key={`otp-${index}`}
               inputRef={(el) => (inputRefs.current[index] = el)}
               value={digit}
               onChange={(e) => handleOtpChange(e.target.value, index)}

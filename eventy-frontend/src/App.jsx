@@ -170,25 +170,25 @@ function App() {
             <Route
               path="/contact"
               element={
-                
+                <ProtectedRoute>
                   <ContactUs />
-                
+                </ProtectedRoute>
               }
             />
             <Route
               path="/create"
               element={
-                
+                <ProtectedRoute>
                   <Create />
-                
+                </ProtectedRoute>
               }
             />
             <Route
               path="/create/createSteps"
               element={
-                
+                <ProtectedRoute>
                   <CreateSteps />
-                
+                </ProtectedRoute>
               }
             />
              <Route
@@ -202,17 +202,23 @@ function App() {
           <Route
           path="/search"
           element={
-            <Search />
+            <ProtectedRoute>
+              <Search />
+            </ProtectedRoute>
           }
         />
         <Route path="/event/:id"
           element={
-            <Event/>
+            <ProtectedRoute>
+              <Event/>
+            </ProtectedRoute>
           }
         />
         <Route path="/booking/:id"
           element={
-            <BookingPage/>
+            <ProtectedRoute>
+              <BookingPage/>
+            </ProtectedRoute>
           }
         />
           </Routes>
